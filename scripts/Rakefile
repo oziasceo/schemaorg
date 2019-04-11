@@ -115,7 +115,7 @@ file "spec/schema_context.rb" => :do_build do
     # FIXME: you would think this would be someplace in the data directory
     # schema_base + '/releases/' + schema_version + '/schema.jsonld'
     #c = JSON::LD::Context.new().parse("http://schema.org/")
-    c = JSON::LD::Context.new().parse("../../data/releases/LATEST/schemaorgcontext.jsonld")
+    c = JSON::LD::Context.new().parse("file://../../data/releases/LATEST/schemaorgcontext.jsonld")
     f.write c.to_rb
   end
 end
