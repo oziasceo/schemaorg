@@ -1241,8 +1241,8 @@ def GetJsonLdContext(layers='core'):
                     type = "DateTime"
                     
                 #If more than one value in range don't output a @type value
-                if count != 1:
-                    type = None
+                #if count != 1:
+                #    type = None
 
             typins = ""
             if type:
