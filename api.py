@@ -1232,8 +1232,7 @@ def GetJsonLdContext(layers='core'):
             type = None
             
             #If Text in range don't output a @type value
-            #if not text in range:
-            if True:
+            if not text in range:
                 if url in range:
                     type = "@id"
                 elif date in range:
